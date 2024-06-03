@@ -2,7 +2,15 @@ const inputs = document.querySelectorAll('.input');
 
 const handleFocus = ({ target }) => {
     const span = target.previousElementSibling;
-    span.classlist.add('span_active');
-}
+    span.classList.add('span_active');
+  }  
+
+  const handleFocusOut = ({ target }) => {
+    if (target.value == ''){
+        const span = target.previousElementSibling;
+        span.classList.remove('span_active');
+    }
+  } 
 
 inputs.forEach((input) => input.addEventListener('focus', handleFocus));
+inputs.forEach((input) => input.addEventListener('focusout', handleFocusOut));
