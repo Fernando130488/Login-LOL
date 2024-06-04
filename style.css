@@ -189,7 +189,7 @@ main {
 
 .wallpaper {
     width: 100%;
-    background-image: url('./imgs-lol/wallpaper-lol.jpg');
+    background-image: url('./imgs-lol/wallpaper-lol.jpeg');
     background-size: cover;
     background-position: center;
     flex: 1;
